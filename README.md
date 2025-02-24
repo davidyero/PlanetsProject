@@ -1,12 +1,11 @@
-# Inciiar Proyecto
-
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
-
-## Step 1: Start the Metro Server
+## Inciar Proyecto
 Para iniciar el proyecto es necesario tener configurado los simuladores correctamente y tener instalado Metro
 
 ```bash
+#instalar dependencias
 yarn install
+
+#iniciar proyecto
 yarn start --reset-cache
 ```
 
