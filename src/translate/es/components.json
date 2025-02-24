@@ -1,4 +1,4 @@
 {
-  "components.switch.all": "All",
-  "components.switch.favorites": "Favorites"
+  "component.switch.all": "Todos",
+  "component.switch.favorites": "Favoritos"
 }

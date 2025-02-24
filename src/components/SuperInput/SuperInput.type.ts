@@ -1,8 +1,7 @@
-export interface SuperActionButtonProps {
-  actionClick: () => void;
-  text: string;
-  color?: string;
-  label?: string;
-  children?: React.ReactNode;
-  isDisabled?: boolean;
+export interface SuperInputProps {
+  placeholder: string;
+  onChangeText: (text: string) => void;
+  value?: string;
+  label: string;
+  secureTextEntry?: boolean;
 }

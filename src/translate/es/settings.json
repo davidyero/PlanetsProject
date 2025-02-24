@@ -1,4 +1,6 @@
 {
-  "settings.language": "Language",
-  "settings.personalization": "Personalization"
+  "settings.title": "Configuración",
+  "settings.language": "Idioma",
+  "settings.chooseLanguage": "Elegir idioma",
+  "settings.personalization": "Personalización"
 }

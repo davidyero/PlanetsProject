@@ -1,3 +1,5 @@
 {
-  "home.placeholder": "Search for a planet"
+  "home.placeholder": "Buscar un planeta",
+  "home.loading": "Cargando...",
+  "home.notFound": "No se encontraron resultados"
 }

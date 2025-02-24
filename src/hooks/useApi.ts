@@ -34,26 +34,6 @@ export const useApi = () => {
     }
   };
 
-  const API_DELETE_WITHOUT_BODY = async (url: string) => {
-    try {
-      const response = await axios.delete(url);
-      return response.data;
-    } catch (error) {
-      console.error('API_DELETE_WITHOUT_BODY', error);
-      throw error;
-    }
-  };
-
-  const API_DELETE_WITH_BODY = async (url: string, data: any) => {
-    try {
-      const response = await axios.delete(url, {data: data});
-      return response.data;
-    } catch (error) {
-      console.error('API_DELETE_WITH_BODY', error);
-      throw error;
-    }
-  };
-
   const API_PUT = async (url: string, data: any) => {
     try {
       const response = await axios.put(url, data);
@@ -69,7 +49,5 @@ export const useApi = () => {
     API_POST,
     API_DELETE,
     API_PUT,
-    API_DELETE_WITHOUT_BODY,
-    API_DELETE_WITH_BODY,
   };
 };

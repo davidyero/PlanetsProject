@@ -1,7 +1,8 @@
 {
-  "detail.density": "Density",
-  "detail.name": "Name",
-  "detail.meanRadius": "Mean Radius",
-  "detail.gravity": "Gravity",
-  "detail.mass": "Mass"
+  "detail.title": "Detalles",
+  "detail.density": "Densidad",
+  "detail.name": "Nombre",
+  "detail.meanRadius": "Radio Medio",
+  "detail.gravity": "Gravedad",
+  "detail.mass": "Masa"
 }

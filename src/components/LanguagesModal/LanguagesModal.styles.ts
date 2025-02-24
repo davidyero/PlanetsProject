@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Colors } from '../../../shared/styles/Colors';
+import { Colors } from '../../shared/styles/Colors.ts';
 
 export const LanguagesModalStyles = StyleSheet.create({
   container: {

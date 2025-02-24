@@ -1,0 +1,10 @@
+node_modules
+build
+android
+ios
+*.log
+*.lock
+package-lock.json
+yarn.lock
+coverage
+

@@ -1,7 +1,7 @@
 import { SuperModalProps } from './SuperModal.type';
 import { SuperModalStyles } from './SuperModal.styles';
 import { View, Text, Modal } from 'react-native';
-import CloseIcon from '../../assets/icons/transversal/close-circle.svg';
+import CloseIcon from '../../assets/svg/icons/close-circle.svg';
 import { Colors } from '../../shared/styles/Colors';
 import { ScrollView } from 'react-native-gesture-handler';
 
@@ -29,7 +29,7 @@ export const SuperModal = ({
   const iconProperties = {
     width: 24,
     height: 24,
-    color: Colors.white,
+    color: Colors.secondary,
   };
   if (!isVisible) {
     return null;

@@ -1,79 +1,59 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
-
-# Getting Started
+# Inciiar Proyecto
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
-
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
+Para iniciar el proyecto es necesario tener configurado los simuladores correctamente y tener instalado Metro
 
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+yarn install
+yarn start --reset-cache
 ```
 
-## Step 2: Start your Application
+# CODIGO
+Se realiza un proyecto con código reutilizable, escalable y mantenible. Se utilizan las siguientes tecnologías:
+- React Native
+- React Hooks
+- React Context
+- React Navigation
+- Axios
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Estructura
+- Se divide el proyecto en componentes, hooks, context, navigation, views y shared.
+- Se implementa el patrón de diseño de contenedor y presentacional.
+- Se implementa una arquitectura hexagonal.
+- Se implementa el principio de responsabilidad única.
+- Se implementa el principio de inversión de dependencias.
+- Se implementa el principio de segregación de interfaces.
+- Se centralizan colores en un archivo para alinear todo el proyecto.
+- Todo componente, objeto o vista tiene su interface
 
-### For Android
+## Linter
+- Se implementa un sistema de linter con ESLint y Prettier para mantener un código limpio y ordenado.
 
-```bash
-# using npm
-npm run android
+## Componentes reutilizables
+- Se implementan componentes reutilizables y configurables como SuperModal, SuperSwitch, SuperInput, SuperCard, 
+SuperHeader, entre otros con el fin de estandarizar su uso, sus estilos y reducir la duplicidad de código.
 
-# OR using Yarn
-yarn android
-```
+## Dependencias
+- Se usaron librerías de componentes como el Modal o Notificaciones, pero fueron encapsuladas con el fin de poder cambiarlas
+  en cualquier momento sin necesidad de afectar todas las implementaciones
 
-### For iOS
+## Internacionalización
+- Se implementa la internacionalización de una forma escalabe y extensible, permitiendo agregar más idiomas sin
+  dificultad con i18next y react-i18next.
 
-```bash
-# using npm
-npm run ios
+## Navegación
+- Se implementa @react-navigation para la navegación entre pantallas, se centraliza la configuración de las rutas y se
+  implementa un hook para navegar entre pantallas de forma sencilla.
 
-# OR using Yarn
-yarn ios
-```
+## Context
+- Se implementa context para manejar el estado global de la aplicación, se centraliza la configuración de los contextos y se
+  implementa un hook para acceder a los valores de los contextos de forma sencilla.
+- Igualmente se guardan los favoritos en el contexto para poder acceder a ellos desde cualquier parte de la aplicación
+pero tambien se guarda en el AsyncStorage para persistir los datos.
+- Y se guarda el idioma seleccionado en el contexto para poder cambiarlo en cualquier parte de la aplicación.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Consultas al backend
+- Se implementa axios como dependencia para consultar al backend, se crean hooks que centralizan la forma de hacer consultas
+estableciendo un punto único de acceso a los servicios.

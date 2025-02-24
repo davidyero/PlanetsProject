@@ -3,13 +3,14 @@ import { LanguagesModalProps } from './LanguagesModal.type';
 import {
   LANGUAGES_LIST,
   LanguagesActives,
-} from '../../../shared/interfaces/transversal';
-import EnglishIcon from '../../../assets/icons/lang/english.svg';
-import SpanishIcon from '../../../assets/icons/lang/spanish.svg';
+} from '../../shared/interfaces/transversal';
+import EnglishIcon from '../../assets/svg/lang/english.svg';
+import SpanishIcon from '../../assets/svg/lang/spanish.svg';
 import { LanguagesModalStyles } from './LanguagesModal.styles';
 import { useTranslation } from 'react-i18next';
-import { useLocalStorage } from "../../../hooks/useLocalStorage/useLocalStorage.ts";
-import { LOCAL_STORAGE } from "../../../shared/constants/LocalStorage.ts";
+import { useLocalStorage } from "../../hooks/useLocalStorage.ts";
+import { LOCAL_STORAGE } from "../../shared/constants/LocalStorageConstants.ts";
+import { Colors } from "../../shared/styles/Colors.ts";
 
 export const LanguagesModal = ({ closeModal }: LanguagesModalProps) => {
   const { i18n } = useTranslation();

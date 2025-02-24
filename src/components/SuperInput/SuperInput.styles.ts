@@ -4,13 +4,7 @@ import { CommonStyles } from '../../shared/styles/CommonStyles';
 
 export const SuperInputStyles = StyleSheet.create({
   container: {
-    marginTop: 10,
     width: '100%',
-  },
-  label: {
-    ...CommonStyles.textPrimary,
-    fontSize: 16,
-    fontWeight: 'bold',
   },
   containerInput: {
     alignItems: 'center',
@@ -24,5 +18,10 @@ export const SuperInputStyles = StyleSheet.create({
     height: 40,
     paddingHorizontal: 10,
     width: '100%',
+  },
+  label: {
+    ...CommonStyles.textPrimary,
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });

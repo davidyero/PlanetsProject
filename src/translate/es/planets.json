@@ -1,10 +1,10 @@
 {
-  "planets.Uranus": "Uranus",
-  "planets.Neptune": "Neptune",
+  "planets.Uranus": "Urano",
+  "planets.Neptune": "Neptuno",
   "planets.Jupiter": "Jupiter",
-  "planets.Mars": "Mars",
-  "planets.Mercure": "Mercury",
-  "planets.Saturne": "Saturn",
+  "planets.Mars": "Marte",
+  "planets.Mercure": "Mercurio",
+  "planets.Saturne": "Saturno",
   "planets.Venus": "Venus",
-  "planets.LaTerre": "Earth"
+  "planets.LaTerre": "La Tierra"
 }
